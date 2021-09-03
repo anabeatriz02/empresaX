@@ -17,16 +17,17 @@ if (isset($_GET["buscarFuncionario"])){
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Atividade JSON</title>
 </head>
 <body>
-<form>
+<section>
+    <h1>Tabela de Funcionários</h1>
+    <form>
     <input type="text" value="<?= isset($_GET["buscarFuncionario"]) ? $_GET["buscarFuncionario"] : ""?>" 
     name="buscarFuncionario" placeholder="Buscar Funcionario" />
     <button>Buscar</button>
     </form>
-<section>
-    <h1>Tabela de Funcionários</h1>
     <table border="15">
         <tr>
             <th>ID</th>
