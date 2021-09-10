@@ -15,6 +15,7 @@ if (isset($_GET["filtro"]) && $_GET["filtro"] != "") {
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="./script.js" defer></script>
     <title>Empresa X</title>
@@ -66,9 +67,9 @@ if (isset($_GET["filtro"]) && $_GET["filtro"] != "") {
                 <th>Endereço IP</th>
                 <th>País</th>
                 <th>Departamentos</th>
+                <th>Editar</th>
+                <th>Excluir</th>
             </tr>
-
-
 
             <?php
             foreach ($funcionarios as $funcionario) :
@@ -81,6 +82,8 @@ if (isset($_GET["filtro"]) && $_GET["filtro"] != "") {
                 <td> <?= $funcionario->ip_address; ?></td>
                 <td> <?= $funcionario->country; ?></td>
                 <td> <?= $funcionario->department; ?></td>
+                <td> <button class="edit">&#9999;</button> </td>
+                <td> <button onclick="deletar(<?= $funcionario->id ?>)" class="excluir">&#128465;</button> </td>
                 </tr>
             <?php
             endforeach;

@@ -77,8 +77,6 @@ button {
     cursor: pointer;
   }
 
-
-
 button#btnAddFuncionario{
     height: fit-content;
     height: 32px;
@@ -91,6 +89,29 @@ button#btnAddFuncionario{
     cursor: pointer;
   }
 
+.edit{
+    height: fit-content;
+    height: 32px;
+    width: 50px;
+    background-color: rgb(48, 130, 236);
+    border: 1px solid rgb(243, 247, 244);
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+  }
+
+.excluir{
+    height: fit-content;
+    height: 32px;
+    width: 50px;
+    background-color: rgb(252, 22, 22);
+    border: 1px solid rgb(239, 239, 245);
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+}
 
 
   button:hover{
