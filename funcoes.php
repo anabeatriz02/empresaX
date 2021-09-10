@@ -15,7 +15,7 @@ function buscarFuncionarios($funcionarios, $filtro){
             ||
             strpos($funcionario->last_name, $filtro) !== false
             ||
-            strpos($funcionario->departament, $filtro) !== false
+            strpos($funcionario->department, $filtro) !== false
             ){
             $funcionariosFiltro[] = $funcionario;
         }

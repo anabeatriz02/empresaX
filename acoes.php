@@ -1,6 +1,6 @@
 <?php
 
-require("./funcoes.php")
+require("./funcoes.php");
 
 
 $novoFuncionario = [
@@ -14,7 +14,7 @@ $novoFuncionario = [
         "department"=> $_POST ["department"]
 ];
 
-adicionarFuncionario("./empresaX.json", $novoFuncionario);
+adicionarFuncionario("./dados/empresaX.json", $novoFuncionario);
 header("location: index.php");
 
 
